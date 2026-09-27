@@ -1,9 +1,15 @@
 # Yozora Studio Website
 
-Official website for Yozora Studio — creating apps and content to make everyday life a little easier. 🌙
+Static website for https://yozorastudio.com/
 
 ## Files
-- `index.html` — website content
-- `style.css` — website design
+- index.html — Home
+- support.html — App support
+- privacy.html — Privacy Policy
+- terms.html — Terms of Use
+- 404.html — Custom GitHub Pages 404
+- style.css — Shared styles
+- sitemap.xml / robots.txt — Search engine files
+- assets/images/ — Official characters, app icons and work images
 
-Designed for static hosting such as GitHub Pages.
+Store links can be added to the app cards in index.html after each app is released.
