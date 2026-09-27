@@ -1,15 +1,12 @@
-# Yozora Studio Website
+# Yozora Studio Official Website
 
-Static website for https://yozorastudio.com/
+公開用サイト一式です。
 
-## Files
-- index.html — Home
-- support.html — App support
-- privacy.html — Privacy Policy
-- terms.html — Terms of Use
-- 404.html — Custom GitHub Pages 404
-- style.css — Shared styles
-- sitemap.xml / robots.txt — Search engine files
-- assets/images/ — Official characters, app icons and work images
+- 正式ロゴ反映済み
+- favicon / Apple Touch Icon 更新済み
+- OGP 1200×630 更新済み
+- Apps / Characters / Works / About / Contact
+- Privacy Policy / Terms / Support / 404
+- sitemap.xml / robots.txt
 
-Store links can be added to the app cards in index.html after each app is released.
+公開先: https://yozorastudio.com/
