@@ -36,6 +36,11 @@
       white-space: nowrap;
     }
 
+    /* CTA見出しの2行目を途中で改行させない */
+    .concept-cta .no-break {
+      white-space: nowrap;
+    }
+
     @media (max-width: 760px) {
       .concept-hero h1 {
         font-size: clamp(2.1rem, 9vw, 3.2rem);
@@ -195,7 +200,8 @@
     <div class="wrap concept-cta">
 
       <h2>
-        なんでもない日も、ふたりなら。
+        なんでもない日も、<br>
+        <span class="no-break">ふたりなら。</span>
       </h2>
 
       <p>
