@@ -775,3 +775,15 @@ nav a:hover {
     max-width: 260px;
   }
 }
+
+/* Booksページ下部メッセージ */
+.books-cta-copy span {
+  display: block;
+  white-space: nowrap;
+}
+
+@media (max-width: 760px) {
+  .books-cta-copy span {
+    white-space: normal;
+  }
+}
