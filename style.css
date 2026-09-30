@@ -609,17 +609,41 @@ nav a:hover {
   gap: 12px;
 }
 
-.social-buttons .btn {
-  min-width: 130px;
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-width: 150px;
   text-align: center;
 }
 
+.social-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.x-icon {
+  width: 17px;
+  height: 17px;
+}
+
+.youtube-icon {
+  width: 24px;
+  height: 18px;
+}
+
 @media (max-width: 520px) {
+
   .social-buttons {
     flex-direction: column;
   }
 
-  .social-buttons .btn {
+  .social-btn {
     width: 100%;
   }
+
 }
