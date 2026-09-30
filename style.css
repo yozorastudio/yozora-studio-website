@@ -583,3 +583,43 @@ nav a:hover {
     font-size: .88rem;
   }
 }
+
+/* =========================
+   Official SNS
+========================= */
+
+.social-links {
+  margin-top: 32px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+}
+
+.social-links h3 {
+  margin: 0 0 8px;
+  font-size: 1.15rem;
+}
+
+.social-links p {
+  margin: 0 0 18px;
+}
+
+.social-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.social-buttons .btn {
+  min-width: 130px;
+  text-align: center;
+}
+
+@media (max-width: 520px) {
+  .social-buttons {
+    flex-direction: column;
+  }
+
+  .social-buttons .btn {
+    width: 100%;
+  }
+}
