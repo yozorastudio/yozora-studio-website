@@ -232,6 +232,10 @@ nav a:hover {
   object-fit: contain;
 }
 
+.line-stamp-image {
+  object-fit: contain !important;
+}
+
 
 /* =========================
    Concept Book
