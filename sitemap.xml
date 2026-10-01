@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://yozorastudio.com/</loc></url>
-<url><loc>https://yozorastudio.com/concept-book.html</loc></url>
-<url><loc>https://yozorastudio.com/support.html</loc></url>
-<url><loc>https://yozorastudio.com/privacy.html</loc></url>
-<url><loc>https://yozorastudio.com/terms.html</loc></url>
+  <url><loc>https://yozorastudio.com/</loc></url>
+  <url><loc>https://yozorastudio.com/books.html</loc></url>
+  <url><loc>https://yozorastudio.com/concept-book.html</loc></url>
+  <url><loc>https://yozorastudio.com/support.html</loc></url>
+  <url><loc>https://yozorastudio.com/privacy.html</loc></url>
+  <url><loc>https://yozorastudio.com/ai-policy.html</loc></url>
+  <url><loc>https://yozorastudio.com/terms.html</loc></url>
 </urlset>
