@@ -461,20 +461,14 @@ nav a:hover {
 .notfound-art {
   display: flex;
   justify-content: center;
-  align-items: end;
-  gap: 0;
-  height: 300px;
+  align-items: center;
+  margin-bottom: 24px;
 }
 
-.notfound-art img:first-child {
-  height: 280px;
-  width: auto;
-}
-
-.notfound-art img:last-child {
-  height: 170px;
-  width: auto;
-  margin-left: -25px;
+.notfound-art img {
+  width: min(600px, 90vw);
+  height: auto;
+  display: block;
 }
 
 .notfound h1 {
