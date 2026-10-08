@@ -838,3 +838,14 @@ nav a:hover {
   .web-flow li:not(:last-child)::after { content: "↓"; top: auto; bottom: -24px; right: 50%; }
   .web-contact { padding: 24px; }
 }
+/* Free consultation links */
+.web-consultation { margin-top: 24px; }
+.web-consultation p { margin: 8px 0 0; font-size: .85rem; }
+.consultation-btn { max-width: 100%; text-align: center; }
+.consultation-btn:hover { background: #363d79; }
+.consultation-btn:focus-visible { outline: 3px solid var(--deep); outline-offset: 4px; }
+.footer-links { align-items: center; }
+.footer-links .consultation-btn { margin-top: 0; font-size: .9rem; }
+@media (max-width: 430px) {
+  .web-consultation .consultation-btn { width: 100%; }
+}
