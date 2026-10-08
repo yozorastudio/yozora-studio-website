@@ -806,3 +806,35 @@ nav a:hover {
 .email-copy-button { border: 0; font: inherit; font-weight: 700; cursor: pointer; }
 .email-copy-button:focus-visible { outline: 3px solid var(--deep); outline-offset: 4px; }
 .email-copy-status { min-height: 1.8em; margin: 8px 0 0; font-size: .85rem; }
+
+/* Web production service */
+.web-subheading { font-size: 1.4rem; color: var(--deep); margin: 0 0 20px; }
+.web-portfolio-list { display: grid; gap: 26px; }
+.noir-preview { aspect-ratio: 1086 / 872; }
+.noir-preview img { object-fit: contain; object-position: center; background: #f6f5f1; }
+.web-service-block { margin-top: 56px; }
+.web-service-block > .tag { margin-bottom: 14px; }
+.web-pricing-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; margin-top: 24px; }
+.web-plan { padding: clamp(22px, 4vw, 32px); }
+.web-plan h4 { font-size: 1.2rem; margin: 0; }
+.web-plan p { margin: 10px 0 0; }
+.web-plan .web-price { font-size: clamp(2rem, 4vw, 2.6rem); font-weight: 800; line-height: 1.4; color: var(--deep); }
+.web-price span { font-size: .9rem; margin-left: 6px; display: inline-block; }
+.web-plan-notes { padding-left: 1.4em; margin-top: 24px; }
+.web-plan-notes li { margin: 6px 0; }
+.web-flow { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 20px; padding: 0; list-style: none; }
+.web-flow li { position: relative; text-align: center; padding: 18px 8px; border: 1px solid var(--line); border-radius: 18px; background: var(--white); font-size: .9rem; font-weight: 700; }
+.web-flow li span { display: block; color: var(--muted); font-size: .8rem; margin-bottom: 6px; }
+.web-flow li:not(:last-child)::after { content: "→"; position: absolute; right: -18px; top: 40%; color: var(--muted); }
+.web-contact { margin-top: 48px; }
+.web-contact h3 { margin: 0; font-size: 1.4rem; }
+.web-contact .email-copy-address { margin-top: 16px; }
+#web-design a:focus-visible { outline: 3px solid var(--deep); outline-offset: 4px; }
+@media (max-width: 760px) {
+  .web-pricing-grid { grid-template-columns: 1fr; }
+  .web-flow { grid-template-columns: 1fr; gap: 22px; }
+  .web-flow li { display: flex; align-items: center; gap: 14px; text-align: left; padding: 14px 20px; }
+  .web-flow li span { margin: 0; }
+  .web-flow li:not(:last-child)::after { content: "↓"; top: auto; bottom: -24px; right: 50%; }
+  .web-contact { padding: 24px; }
+}
