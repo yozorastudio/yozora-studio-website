@@ -32,7 +32,7 @@
   <meta name="twitter:card" content="summary_large_image">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="/style.css?v=20261009-portfolio-crop">
+  <link rel="stylesheet" href="/style.css?v=20261009-email-copy">
 
   <!-- Structured Data -->
   <script type="application/ld+json">
@@ -537,6 +537,11 @@
         <p class="muted">実在店舗の受託制作実績ではありません。店舗・メニュー・料金は架空で、実際の予約は受け付けていません。</p>
         <a class="btn" href="/portfolio/yohaku/">デモサイトを見る</a>
         <a class="btn secondary" href="mailto:yozorastudio24@gmail.com?subject=Web%E5%88%B6%E4%BD%9C%E3%81%AE%E3%81%94%E7%9B%B8%E8%AB%87">Web制作について相談する</a>
+        <div class="email-copy">
+          <p class="email-copy-address">メールアドレス：<span>yozorastudio24@gmail.com</span></p>
+          <button class="btn secondary email-copy-button" type="button" aria-describedby="web-email-status">メールアドレスをコピー</button>
+          <p class="email-copy-status muted" id="web-email-status" role="status" aria-live="polite"></p>
+        </div>
       </div>
     </article>
   </div>
@@ -602,6 +607,11 @@
       >
         メールで問い合わせる
       </a>
+        <div class="email-copy">
+          <p class="email-copy-address">メールアドレス：<span>yozorastudio24@gmail.com</span></p>
+          <button class="btn secondary email-copy-button" type="button" aria-describedby="contact-email-status">メールアドレスをコピー</button>
+          <p class="email-copy-status muted" id="contact-email-status" role="status" aria-live="polite"></p>
+        </div>
 
       <p class="muted">
 
@@ -734,5 +744,6 @@
 </footer>
 
 
+<script src="/contact.js?v=20261009-email-copy" defer></script>
 </body>
 </html>

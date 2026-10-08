@@ -798,3 +798,11 @@ nav a:hover {
 @media (max-width: 760px) {
   .web-portfolio-card { grid-template-columns: 1fr; }
 }
+
+/* Email contact alternative */
+.email-copy { margin-top: 18px; }
+.email-copy-address { margin: 0; font-size: .92rem; overflow-wrap: anywhere; }
+.email-copy-address span { user-select: text; }
+.email-copy-button { border: 0; font: inherit; font-weight: 700; cursor: pointer; }
+.email-copy-button:focus-visible { outline: 3px solid var(--deep); outline-offset: 4px; }
+.email-copy-status { min-height: 1.8em; margin: 8px 0 0; font-size: .85rem; }
