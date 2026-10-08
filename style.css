@@ -781,3 +781,20 @@ nav a:hover {
     white-space: normal;
   }
 }
+
+/* Web Design Portfolio */
+#web-design { scroll-margin-top: 130px; }
+.web-portfolio-card {
+  display: grid;
+  grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr);
+  align-items: center;
+  gap: clamp(24px, 4vw, 48px);
+}
+.web-portfolio-preview { display: block; border-radius: 18px; overflow: hidden; }
+.web-portfolio-preview img { aspect-ratio: 4 / 3; object-fit: cover; object-position: center; background: #f6f5ed; }
+.web-portfolio-card h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
+.web-portfolio-card .muted { font-size: .88rem; }
+.web-portfolio-card .btn { margin-right: 6px; }
+@media (max-width: 760px) {
+  .web-portfolio-card { grid-template-columns: 1fr; }
+}
