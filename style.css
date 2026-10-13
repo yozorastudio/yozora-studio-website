@@ -890,3 +890,17 @@ nav a:hover {
   .halloween-banner { padding-top: 24px; padding-bottom: 24px; }
   .halloween-banner-link { border-radius: 16px; }
 }
+
+/* Music */
+.music-list { display: grid; gap: 34px; max-width: 980px; }
+.music-card { padding: clamp(20px, 4vw, 38px); min-width: 0; }
+.music-card h2 { margin: 6px 0 14px; font-size: clamp(1.35rem, 2.3vw, 1.8rem); line-height: 1.55; }
+.music-player { margin-top: 24px; aspect-ratio: 16 / 9; overflow: hidden; border-radius: 18px; background: var(--lav); }
+.music-player iframe { display: block; width: 100%; height: 100%; border: 0; }
+.music-card > .btn { margin-top: 18px; }
+.music-home h2 { font-size: clamp(1.45rem, 3vw, 2rem); }
+nav a[aria-current="page"] { color: var(--deep); font-weight: 700; }
+.music-card a:focus-visible, .music-home a:focus-visible { outline: 3px solid var(--deep); outline-offset: 4px; }
+@media (min-width: 761px) and (max-width: 1080px) { .nav { flex-wrap: wrap; padding: 12px 0; gap: 10px; } }
+
+.music-card { scroll-margin-top: 150px; }
