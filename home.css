@@ -85,3 +85,70 @@
   .home-intro h1 { font-size:clamp(1.6rem,7.5vw,2.5rem); }
   .home-renewal .site-header nav { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); width:100%; gap:2px 16px; }
 }
+
+/* Gentle light and official artwork; limited to the renewed homepage. */
+.home-renewal { --purple:#74638e; --lav:#f1edf7; --line:#e3dfea; }
+.home-intro { background:radial-gradient(ellipse at 83% 15%,#e9e0f5 0,transparent 45%),radial-gradient(ellipse at 10% 80%,#fbefe7 0,transparent 42%),linear-gradient(150deg,#fcfbfd,#f6f5f8); }
+.home-intro h1 { color:#34303e; letter-spacing:.055em; }
+.home-intro .eyebrow,.world-heading .eyebrow { color:#75618d; }
+.entrance { border-color:#e2dce9; box-shadow:0 12px 35px #51406408; }
+.entrance:hover { border-color:#a795bd; }
+.entrance-visual { height:280px; }
+.character-visual { padding:18px 30px 0; background:radial-gradient(ellipse at 50% 85%,#fffaf0 0,transparent 55%),linear-gradient(140deg,#eee8f8,#f8f4fa 55%,#e7e0f0); }
+.character-visual:before,.character-visual:after { content:"✦"; position:absolute; color:#b5a1c8; font-size:24px; top:28px; left:12%; }
+.character-visual:after { left:auto; right:12%; top:50px; font-size:13px; color:#c5ab7c; }
+.character-visual img { position:relative; z-index:1; width:58%; filter:drop-shadow(0 12px 10px #73628e14); }
+.character-visual img + img { width:38%; height:76%; margin-bottom:16px; }
+.web-visual { background:linear-gradient(135deg,#f4efe8,#e7ece6); padding:24px 30px 38px; }
+.web-visual:after { display:none; }
+.screen-pc { width:90%; height:100%; border:6px solid #fff; border-top:14px solid #fff; border-radius:10px; overflow:hidden; box-shadow:0 10px 24px #39413926; }
+.web-visual .screen-pc img { width:100%; height:100%; object-fit:cover; object-position:top; }
+.screen-mobile { position:absolute; right:25px; top:53px; height:194px; width:94px; border:5px solid #fff; border-radius:15px; overflow:hidden; box-shadow:0 8px 18px #39413930; }
+.web-visual .screen-mobile img { width:100%; height:100%; object-fit:cover; object-position:top; }
+.web-visual > .sample-caption { top:auto; bottom:9px; left:30px; color:#555e55; font-size:.72rem; letter-spacing:.04em; font-weight:500; }
+.home-renewal .world-heading { position:relative; padding:72px 0; background:radial-gradient(ellipse at 10% 30%,#f1eaf8,transparent 60%),#fcfbfd; overflow:hidden; }
+.world-hero { display:grid; grid-template-columns:1fr 1fr; gap:52px; align-items:center; }
+.world-copy h2 { font-family:"Yu Mincho","Hiragino Mincho ProN",serif; line-height:1.6; }
+.world-copy > p:not(.eyebrow) { color:var(--muted); line-height:2; }
+.world-illustration { position:relative; padding:12px; }
+.world-illustration:before { content:"✦"; position:absolute; top:0; right:0; color:#b8a36d; font-size:28px; z-index:1; }
+.world-illustration img { display:block; width:100%; height:auto; aspect-ratio:1; object-fit:cover; border-radius:48% 48% 12px 12px; box-shadow:0 18px 45px #66567d18; }
+.world-heading .section-jumps { gap:10px; }
+.world-heading .section-jumps a { border:1px solid #ded5e9; border-radius:30px; padding:7px 14px; background:#ffffffa8; text-decoration:none; }
+.world-heading .section-jumps a:hover { background:#eee5f5; }
+.home-renewal .halloween-banner { margin-top:40px; margin-bottom:12px; }
+.home-renewal #characters { background:linear-gradient(180deg,#fff,#fbf9fd); }
+.home-renewal #characters .character { border:0; border-radius:0; background:transparent; padding:12px 0; gap:24px; }
+.home-renewal #characters .character img { background:radial-gradient(ellipse,#eee6f7,transparent 70%); border-radius:50%; }
+.home-renewal #characters .character + .character img { background:radial-gradient(ellipse,#f7eadd,transparent 70%); }
+.home-renewal #apps { background:#f5f2f8; }
+.home-renewal #apps .grid { grid-template-columns:minmax(0,740px); }
+.home-renewal #apps .card { background:transparent; border:0; padding:0; }
+.home-renewal #works { background:linear-gradient(180deg,#fffdf9,#fcfaf6); }
+.home-renewal #works .works-grid { gap:36px; }
+.home-renewal #works .card { background:transparent; border:0; border-radius:0; padding:0 0 30px; border-bottom:1px solid #e7e0d6; }
+.home-renewal #works .card img { height:320px; aspect-ratio:auto; object-fit:contain; background:#f1eade; padding:20px; border-radius:14px; }
+.home-renewal #works .concept-card img { background:#f0eaf5; }
+.home-renewal #works .card:nth-child(3) img { background:#eeeaf6; }
+.home-renewal #works h3 { margin-top:22px; }
+.home-renewal #music { background:#f7f4fb; }
+.home-renewal .music-home { border:1px solid #e4d9ef; background:radial-gradient(ellipse at 85% 20%,#e2d9f1,transparent 55%),linear-gradient(120deg,#f9f6fc,#eee8f5); position:relative; }
+.home-renewal .music-home:after { content:"✦ · ✧"; position:absolute; top:22px; right:28px; color:#9b87b5; letter-spacing:12px; }
+@media(min-width:761px) { .home-renewal #works .concept-card { display:grid; grid-template-columns:1fr 1fr; gap:0 40px; grid-column:1 / -1; align-content:center; padding:12px 0 36px; } .home-renewal #works .concept-card img { grid-row:1 / 4; height:420px; } .home-renewal #works .concept-card .btn { justify-self:start; align-self:start; } }
+@media(max-width:760px) {
+ .entrance-visual { height:240px; }
+ .character-visual { padding:16px 24px 0; }
+ .web-visual { padding:24px 24px 38px; }
+ .screen-mobile { right:20px; top:45px; height:166px; width:80px; }
+ .web-visual > .sample-caption { left:24px; font-size:.7rem; }
+ .home-renewal .world-heading { padding:48px 0; }
+ .world-hero { grid-template-columns:1fr; gap:24px; }
+ .world-illustration { width:min(100%,420px); margin:0 auto; }
+ .home-renewal #characters .character { grid-template-columns:42% minmax(0,1fr); gap:16px; }
+ .home-renewal #characters .characters { gap:24px; }
+ .home-renewal #works .works-grid { grid-template-columns:1fr; gap:32px; }
+ .home-renewal #works .card img { height:auto; max-height:400px; aspect-ratio:1; }
+ .home-renewal .music-home:after { font-size:12px; top:12px; right:12px; }
+}
+.world-illustration img { aspect-ratio:auto; border-radius:60px 60px 16px 16px; max-width:420px; margin:0 auto; }
+.world-copy h2 { font-size:clamp(1.8rem,3vw,2.5rem); }
