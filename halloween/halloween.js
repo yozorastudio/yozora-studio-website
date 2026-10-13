@@ -1,9 +1,8 @@
 (() => {
   'use strict';
 
-  // Set this to "./assets/halloween-wallpaper.png" after the approved image is added.
-  // Keep null until then: no missing image requests or unavailable download links.
-  const wallpaper = { src: null, filename: 'yozora-porun-halloween-wallpaper.png' };
+  // Original wallpaper supplied by Yozora Studio.
+  const wallpaper = { src: './assets/halloween-wallpaper.png', filename: 'yozora-porun-halloween-wallpaper.png' };
   if (!wallpaper.src) return;
 
   const image = document.getElementById('wallpaper-image');
