@@ -879,3 +879,14 @@ nav a:hover {
 @media (max-width: 760px) {
   .new-book-notice-inner { flex-direction: column; align-items: flex-start; }
 }
+
+/* Halloween special page banner */
+.halloween-banner { padding-top: 32px; padding-bottom: 32px; }
+.halloween-banner-link { display: block; border-radius: 24px; box-shadow: 0 12px 32px #5e51851a; }
+.halloween-banner-link img { width: 100%; height: auto; border-radius: inherit; }
+.halloween-banner-link:hover { box-shadow: 0 12px 32px #5e518533; }
+.halloween-banner-link:focus-visible { outline: 3px solid var(--deep); outline-offset: 5px; }
+@media (max-width: 760px) {
+  .halloween-banner { padding-top: 24px; padding-bottom: 24px; }
+  .halloween-banner-link { border-radius: 16px; }
+}
