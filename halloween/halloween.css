@@ -1,0 +1,55 @@
+.halloween-page { --hw-orange: #805024; }
+.halloween-page [hidden] { display: none !important; }
+.halloween-page :is(a, button):focus-visible { outline: 3px solid var(--deep); outline-offset: 5px; }
+.halloween-page button { font: inherit; font-weight: 700; border: 0; cursor: pointer; }
+.halloween-page :is(section, main) { scroll-margin-top: 140px; }
+.hw-skip { position: fixed; top: -100px; left: 16px; z-index: 30; background: white; padding: 10px 20px; }
+.hw-skip:focus { top: 12px; }
+.hw-hero { padding: 64px 0; background: radial-gradient(circle at 87% 15%, #fff3bd 0 4%, transparent 4.5%), linear-gradient(145deg, #faf8ff, #eee9ff 65%, #fff8e8); }
+.hw-hero-grid { display: grid; grid-template-columns: 1.2fr 1fr; align-items: center; gap: 40px; }
+.hw-eyebrow { color: #69608a; font-size: .8rem; font-weight: 800; letter-spacing: .12em; }
+.hw-hero h1 { font-size: clamp(2.2rem, 4.5vw, 3.7rem); line-height: 1.4; margin: 16px 0; color: var(--deep); }
+.hw-hero h1 span { font-size: .48em; }
+.hw-hero h1 strong { color: var(--hw-orange); }
+.hw-lead { color: #625c78; }
+.hw-art { position: relative; height: 410px; }
+.hw-yozora { position: absolute; width: 74%; bottom: 45px; left: 0; }
+.hw-porun { position: absolute; width: 43%; bottom: 45px; right: 0; }
+.hw-moon { position: absolute; top: -24px; left: 5%; font-size: 72px; color: #94762d; }
+.hw-pumpkin { position: absolute; right: 0; bottom: 30px; font-size: 52px; }
+.hw-art p { position: absolute; bottom: -15px; width: 100%; text-align: center; color: #625c78; font-size: .9rem; }
+.hw-wallpaper-grid { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); align-items: center; gap: clamp(24px, 5vw, 60px); padding: clamp(22px, 4vw, 44px); }
+.hw-wallpaper-figure { margin: 0; text-align: center; }
+.hw-phone { width: min(100%, 252px); aspect-ratio: 9 / 16; margin: auto; border: 8px solid var(--deep); border-radius: 30px; overflow: hidden; background: var(--lav); box-shadow: 0 18px 45px #252a581c; }
+.hw-phone img { width: 100%; height: 100%; object-fit: contain; }
+.hw-placeholder { height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; background: linear-gradient(160deg, #eee9ff, #fff3dc); color: var(--deep); }
+.hw-placeholder span { font-size: 2.5rem; }
+.hw-wallpaper-figure figcaption { font-size: .82rem; color: #625c78; margin-top: 14px; }
+.hw-wallpaper-grid h3 { font-size: clamp(1.25rem, 2.5vw, 1.75rem); margin: 16px 0; }
+.hw-status { color: var(--hw-orange); font-weight: 700; }
+.hw-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.hw-actions .btn { margin: 0; }
+.hw-note { font-size: .88rem; margin-top: 24px; }
+.hw-story { padding: 30px; }
+.hw-story-icon { font-size: 2.7rem; color: #69608a; margin-bottom: 12px; }
+.hw-follow { margin-top: 34px; text-align: center; }
+.hw-follow .btn { margin: 6px; }
+.halloween-page dialog { width: min(92vw, 560px); max-height: 90dvh; border: 1px solid var(--line); border-radius: 24px; padding: 20px; color: var(--ink); overflow: auto; }
+.halloween-page dialog::backdrop { background: #252a58b3; }
+.hw-dialog-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 20px; }
+.hw-dialog-head h2 { font-size: 1.2rem; margin: 0; }
+.hw-dialog-head .btn { margin: 0; }
+#wallpaper-large { max-height: 70dvh; width: auto; max-width: 100%; margin: auto; }
+@media (max-width: 760px) {
+  .hw-hero { padding: 38px 0 48px; }
+  .hw-hero-grid, .hw-wallpaper-grid { grid-template-columns: 1fr; }
+  .hw-art { height: 340px; width: min(100%, 390px); margin: auto; }
+}
+@media (max-width: 430px) {
+  .hw-hero h1 { font-size: clamp(1.9rem, 9vw, 2.6rem); }
+  .hw-art { height: 290px; }
+  .hw-art .hw-moon { font-size: 56px; }
+  .hw-actions { flex-direction: column; }
+  .hw-actions .btn { text-align: center; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
