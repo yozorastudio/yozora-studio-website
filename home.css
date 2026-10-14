@@ -8,6 +8,13 @@
 .home-renewal #about .founder-story { line-height:2; overflow-wrap:anywhere; }
 .home-renewal #about .founder-story p { margin:0 0 1.25em; }
 .home-renewal #about .founder-story p:last-child { margin-bottom:0; }
+.home-renewal #about .founder-strengths { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; list-style:none; padding:0; margin:24px 0 0; }
+.home-renewal #about .founder-strengths li { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:8px; min-width:0; padding:16px 8px; border:1px solid var(--line); border-radius:12px; background:#ffffffb3; color:var(--deep); font-size:.875rem; font-weight:600; line-height:1.6; text-align:center; }
+.home-renewal #about .founder-strengths svg { flex-shrink:0; color:var(--purple); }
+@media(max-width:600px) {
+  .home-renewal #about .founder-strengths { grid-template-columns:1fr; gap:8px; }
+  .home-renewal #about .founder-strengths li { flex-direction:row; gap:12px; padding:12px 16px; }
+}
 .home-renewal { --ink:#30333a; --muted:#62666e; --deep:#303747; --purple:#656579; --lav:#f1f2f4; --line:#e1e3e7; }
 .home-renewal .wrap { width:min(1120px,calc(100% - 48px)); }
 .home-renewal .section.alt { background:#f7f7f8; }
