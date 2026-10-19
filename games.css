@@ -1,0 +1,19 @@
+/* Games page only. Shared business pages retain their existing styles. */
+.games-list { display:grid; gap:24px; }
+.games-list > h2 { margin:0; }
+.game-card { padding:clamp(22px,4vw,44px); min-width:0; }
+.game-intro { display:grid; grid-template-columns:minmax(0,1.4fr) minmax(0,1fr); gap:32px; align-items:center; }
+.game-copy h3 { margin:8px 0 20px; font-size:clamp(1.5rem,3.3vw,2.2rem); line-height:1.55; overflow-wrap:anywhere; }
+.game-question { color:var(--deep); font-size:1.2rem; }
+.game-tags { display:flex; flex-wrap:wrap; gap:8px; padding:0; margin:24px 0; list-style:none; }
+.game-tags li { padding:4px 12px; border:1px solid var(--line); border-radius:99px; background:var(--lav); font-size:.85rem; }
+.game-note,.game-characters figcaption { color:#625c76; font-size:.85rem; }
+.game-characters { margin:0; padding:24px 12px; border-radius:20px; background:linear-gradient(150deg,var(--lav),var(--cream)); text-align:center; }
+.game-characters > div { display:flex; align-items:center; justify-content:center; }
+.game-characters img { width:58%; height:240px; object-fit:contain; }
+.game-characters img + img { width:38%; height:170px; }
+.game-features { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; margin:32px 0 0; padding-top:28px; border-top:1px solid var(--line); }
+.game-features dt { font-weight:700; color:var(--deep); }
+.game-features dd { margin:10px 0 0; }
+a:focus-visible { outline:3px solid var(--deep); outline-offset:4px; }
+@media(max-width:760px) { .game-intro,.game-features { grid-template-columns:1fr; } .game-characters { max-width:380px; width:100%; justify-self:center; } }
