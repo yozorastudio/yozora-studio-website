@@ -181,3 +181,7 @@
 .wallpaper-home-card p { color: var(--muted); }
 @media (min-width: 761px) { .home-renewal .nav { flex-wrap: wrap; padding: 12px 0; gap: 10px 24px; } }
 @media (max-width: 760px) { .wallpaper-home-card { grid-template-columns: 1fr; gap: 24px; padding: 20px; } }
+
+/* First game preview on the homepage. Preserve the complete screenshot. */
+.home-renewal #games .game-home-preview { display:block; max-width:900px; margin:24px auto; border-radius:14px; overflow:hidden; }
+.home-renewal #games .game-home-preview img { display:block; width:100%; height:auto; aspect-ratio:auto; object-fit:contain; }
