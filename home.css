@@ -17,18 +17,18 @@
 }
 .home-renewal { --ink:#30333a; --muted:#62666e; --deep:#303747; --purple:#656579; --lav:#f1f2f4; --line:#e1e3e7; }
 .home-renewal .wrap { width:min(1120px,calc(100% - 48px)); }
-.home-renewal .section.alt { background:#f7f7f8; }
+.home-renewal .section.alt { background:#f3edfc; }
 .home-renewal .card { border-radius:18px; box-shadow:none; min-width:0; }
 .home-renewal .card img { background:#f4f4f5; }
 .home-renewal .btn { border-radius:10px; }
-.home-renewal .btn.secondary { background:#e9eaed; }
+.home-renewal .btn.secondary { background:#e9dff5; }
 .home-renewal a:focus-visible,.home-renewal button:focus-visible { outline:3px solid #666587; outline-offset:5px; }
 .home-renewal [id] { scroll-margin-top:110px; }
 .home-renewal .site-header nav { gap:22px; }
 .home-renewal .site-header nav a { color:#444852; }
 .skip-link { position:fixed; left:16px; top:-100px; background:#303747; color:white; padding:12px; z-index:30; }
 .skip-link:focus { top:12px; }
-.home-intro { padding:62px 0 70px; background:#f7f7f8; }
+.home-intro { padding:62px 0 70px; background:#f3edfc; }
 .home-intro > .wrap > .eyebrow { font-size:.78rem; margin:0 0 16px; }
 .home-intro h1 { font-size:clamp(1.85rem,4.5vw,3.4rem); letter-spacing:.02em; line-height:1.4; margin:0; }
 .intro-lead { color:var(--muted); margin:18px 0 34px; }
@@ -60,7 +60,7 @@
 .home-renewal #apps h3 { margin-top:0; }
 .home-renewal #apps p { margin:8px 0; }
 .home-renewal #apps .tag { justify-self:start; }
-.home-renewal .concept-cta,.home-renewal .contact-box { background:#f0f1f3; }
+.home-renewal .concept-cta,.home-renewal .contact-box { background:linear-gradient(145deg,#f3ecfc,#e9ddf7); }
 .home-renewal .service-lead { font-size:1.3rem; color:var(--ink); margin-bottom:0; }
 .service-summary { padding:24px 28px; margin:28px 0 42px; border:1px solid #d8dbe0; border-radius:16px; background:white; }
 .service-summary strong { font-size:1.2rem; }
@@ -185,3 +185,9 @@
 /* First game preview on the homepage. Preserve the complete screenshot. */
 .home-renewal #games .game-home-preview { display:block; max-width:900px; margin:24px auto; border-radius:14px; overflow:hidden; }
 .home-renewal #games .game-home-preview img { display:block; width:100%; height:auto; aspect-ratio:auto; object-fit:contain; }
+
+/* Carry Yozora's lavender palette through the bottom of the homepage. */
+.home-renewal { background:#f8f4ff; }
+.home-renewal #contact { background:linear-gradient(180deg,#f8f4ff,#f0e7fb); }
+.home-renewal .contact-box { border:1px solid #ded1ee; }
+.home-renewal .site-footer { background:#ece2f7; border-top-color:#dccdea; }
